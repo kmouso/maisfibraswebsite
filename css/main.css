@@ -27,7 +27,7 @@ p {
 }
 
 section {
-  padding: 80px 0;
+  padding: 160px 0;
 }
 
 /******** Utils *********/
@@ -101,6 +101,14 @@ section {
   margin-right: 20px;
   font-weight: 600;
   color: var(--color-dark-grey-2) !important;
+
+  /* display: flex;
+  align-items: center; */
+}
+
+.header-phone:hover {
+  text-decoration: none;
+  color: var(--color-primary-dark) !important;
 }
 
 .header-contact {
@@ -132,7 +140,7 @@ section {
 
 /******** Hero *********/
 .hero {
-  height: 95vh;
+  height: 100vh;
   background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
     url(../img/hero.jpg);
   position: relative;
@@ -150,6 +158,7 @@ section {
 .hero-content h1 {
   text-transform: uppercase;
   font-weight: 900;
+  font-size: 3.75rem;
   color: #fff;
   margin-bottom: 30px;
   /* line-height: 1.7; */
@@ -165,6 +174,11 @@ section {
 .section-service {
   background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
     url(../img/services.jpg);
+}
+
+.section-testimonials {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url(../img/testimonials.jpg);
 }
 
 /******** Team *********/
@@ -223,12 +237,12 @@ section {
   margin-right: 10px;
 }
 
-.team-social > li > a {
+.team-social>li>a {
   color: #fff;
   text-decoration: none;
 }
 
-.team-social > li > a:hover {
+.team-social>li>a:hover {
   text-shadow: 0 0 6px rgba(255, 255, 255, 0.9);
 }
 
@@ -236,15 +250,14 @@ section {
   margin-bottom: 0;
 }
 
-.more-info > li,
-.more-info > li > a {
+.more-info>li,
+.more-info>li>a {
   font-size: 12px;
   color: #fff;
 }
 
 /******** Address info *********/
-.address-info {
-}
+.address-info {}
 
 .address-inner {
   padding: 70px 0;
@@ -252,6 +265,11 @@ section {
 
 .address-content {
   margin-top: 40px;
+}
+
+.address-bordered {
+  border-left: 1px solid #dee2e6;
+  border-right: 1px solid #dee2e6;
 }
 
 .icon-box {
@@ -263,8 +281,7 @@ section {
 }
 
 /******** Footer *********/
-.footer {
-}
+.footer {}
 
 .footer-copyright {
   padding: 50px 0;
@@ -319,4 +336,19 @@ section {
   -webkit-mask-size: cover;
   mask-image: url(../img/arrow-with-circle-right.svg);
   mask-size: cover;
+}
+
+.review::before {
+  content: url(../img/quote.svg);
+  display: block;
+  margin-bottom: 40px;
+}
+
+.review h3 {
+  font-size: 1.25rem;
+}
+
+.review span {
+  font-size: 1.25rem;
+  font-weight: 300;
 }
